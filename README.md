@@ -7,6 +7,6 @@ Uma loja de bike feita com HTML - CSS - JS
 
 ![image](https://user-images.githubusercontent.com/104876290/204611572-d6d1c4a8-7d40-431b-bec9-4eae3c0ff691.png)
 
-## <a href="loja-bike-jailsonsilv.vercel.app"> Veja mais! </a>
+## <a href="https://loja-bike-jailsonsilv.vercel.app/"> Veja mais! </a>
 
 Feito por <a href="https://www.linkedin.com/in/jailsondev-front-end/">Jailson Silva 😎</a>!
