@@ -1,0 +1,257 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0 ;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #d9d7d5;
+    height:100%;
+    width: 100%;
+}
+
+/* <<>><<>><<>><<>><<>><<>><<>><<>>  HEADER <<>><<>><<>><<>><<>><<>><<>><<>><<>> */
+
+header {
+    color: #d9d7d5;
+    background-color: #0a0a0a;;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    z-index: 999;
+}
+
+.seta-voltar {
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+}
+
+
+header .header-content h2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 27px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 26px;
+    font-style: italic;
+    margin:2% 60%;
+    color: #d9d7d5;
+}
+
+header .header-content h2 span.logo {
+    margin-left: 36px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.aluga1 {
+    text-decoration: none;
+    color: #d9d7d5;
+}
+
+/* <<>><<>><<>><<>><<>><<>><<>><<>> NAVBAR HAMBURGUER <<>><<>><<>><<>><<>><<>><<>><<>> */
+.hamburger{
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1000;
+    margin-right: 7%;
+}
+
+.show-menu .hamburger{
+    right: 16rem;
+
+}
+
+.line{
+    width: 100%;
+    height: .1rem;
+    padding: 1px;
+    border-radius: 10px;
+    background-color: #d9d7d5;
+    box-shadow: 0.1rem 0.1rem 3px rgba(0, 0, 0, 0.788);
+    transition: transform .7s;
+}
+
+.show-menu #line1{
+    transform: rotate(45deg) translate(.4rem, .9rem);
+    background-color: rgb(224, 49, 102);
+    box-shadow: none;
+    z-index: 1000;
+}
+
+.show-menu #line2{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show-menu #line3{
+    transform: rotate(-45deg) translate(.3rem, -.9rem);
+    background-color: rgb(224, 49, 102);
+    box-shadow: none;
+    z-index: 1000;
+}
+
+.sidebar{
+    width: 25rem;
+    height: 100vh;
+    background: linear-gradient(329.54deg, #111111 0%, #222222 100%);
+    box-shadow: 10px 5px 15px 10px rgba(0, 0, 0, 0.582);
+    position: fixed;
+    top: 0;
+    right: -26rem;
+    transition: all .8s;
+    z-index: 999;
+}
+
+.show-menu .sidebar{
+    right: 0;
+}
+
+.menu{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+}
+
+.menu-item{
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.menu-link{
+    font-family: sans-serif;
+    font-size: 1.7rem;
+    color: rgb(245, 245, 245);
+    transition: color .7s;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 7rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-link:hover{
+    color: rgb(0, 255, 255);
+    transition: color .7s;
+}
+
+.container p.anuncio {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #5c5c5c;
+    color: white;
+    font-size:15px;
+    padding: 2px;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 4px;
+}
+
+/*<<>><<>><<>><<>><<>><<>><<>><<>> CARDS  <<>><<>><<>><<>><<>><<>><<>><<>><<>> */
+
+main.all-bikes {
+    max-width: 1440px;
+    margin: 70px auto;
+    padding: 40px 20px;
+}
+
+main .title {
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+    color: #eda709;
+    font-family: ui-monospace;
+    background-color: black;
+    margin: 30px auto;
+    border-radius: 7px;
+}
+
+.team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 95px;
+}
+
+.container-card {
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 61%);
+}
+
+.container-card:nth-child(odd) {
+    background-color:#0179cf;
+}
+
+.container-card:nth-child(even) {
+    background-color: #ffe2df;
+}
+
+/* div.bikes-body {
+    width: 90%;
+    height: 350px;
+    max-width: 350px;
+} */
+
+img.bikes {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin:10px 0;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.nameBike {
+    padding: 20px 0;
+    text-align: center;
+    color: #eda709;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.valor {
+    color: orange;
+    text-align: center;
+}
+
+.parcelas {
+    margin-top:7px;
+    color: gray;
+}
+
+strong {
+    color: #4d4d4d;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+h2,
+h3,
+p {
+    color: #000;
+}

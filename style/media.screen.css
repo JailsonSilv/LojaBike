@@ -1,0 +1,28 @@
+@media (max-width: 810px) and (min-width: 520px) {
+    .container-card {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 519px) {
+    .all-bikes {
+        padding: 30px 15px;
+    }
+
+    .team-cards{
+        gap: 20px;
+    }
+
+    .container-card {
+        max-width: 350px;
+        width: auto;
+    }
+    .bikes-body {
+        height: auto;
+    }
+}
+
+
